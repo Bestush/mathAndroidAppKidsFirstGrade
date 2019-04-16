@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88C5DF"
+
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ChapterOverview">
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:text="بەشەکان"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="90sp"
+
+        />
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+
+
+        <TextView
+
+            android:id="@+id/chapter1"
+            android:layout_width="200dp"
+            android:gravity="center"
+            android:layout_height="200dp"
+            android:background="@drawable/circle"
+            android:text="١"
+            android:textAlignment="center"
+            android:textColor="#FEA754"
+            android:textSize="70sp"
+            android:onClick="chapter1"
+            />
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:onClick="chapter2"
+            android:id="@+id/chapter2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/circle"
+            android:text="٢"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="#FEA754"
+            android:textSize="70sp"
+
+            />
+
+        <TextView
+            android:onClick="chapter3"
+            android:id="@+id/chapter3"
+            android:gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/circle"
+            android:text="٣"
+            android:textAlignment="center"
+            android:textColor="#FEA754"
+            android:textSize="70sp"
+            />
+
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:onClick="goHome"
+        android:id="@+id/home_button"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:background="@drawable/home"
+        />
+</LinearLayout>

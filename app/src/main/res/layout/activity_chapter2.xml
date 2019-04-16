@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#88C5DF"
+    tools:context=".Chapter2"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="پرسیار"
+            android:textColor="#ffffff"
+            android:textSize="50sp"
+            android:background="#FEA754"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:layout_margin="30dp"
+                android:layout_gravity="center"
+                android:id="@+id/question1"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:background="@drawable/speaker_white_background_circle"
+                android:onClick="playQuestion"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="کام لەمانە ٤ سێوە؟"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="#fea754"
+                android:textSize="50sp"
+                android:background="#ffffff"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/wrong_answer_1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:onClick="playSound"
+                android:padding="15dp"
+                android:src="@drawable/six_apple_nobackground" />
+
+            <ImageView
+                android:id="@+id/correct_answer_1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:onClick="playSound"
+                android:padding="15dp"
+
+                android:src="@drawable/fourapp_no_background" />
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@drawable/separator"
+
+            />
+        <Button
+            android:layout_margin="30dp"
+            android:id="@+id/question2"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:background="@drawable/speaker_white_background_circle"
+            android:onClick="playQuestion" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="کام لەمانە ٥ سێوە؟"
+            android:textAlignment="center"
+            android:textColor="#fea754"
+            android:background="@android:color/white"
+            android:textSize="50sp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/correct_answer_2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:onClick="playSound"
+                android:padding="15dp"
+                android:src="@drawable/five_apple_nobackground" />
+
+            <ImageView
+                android:id="@+id/wrong_answer_2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:onClick="playSound"
+                android:padding="15dp"
+                android:src="@drawable/two_apple_nobackground" />
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@drawable/separator"
+
+            />
+        <Button
+            android:layout_margin="30dp"
+            android:id="@+id/question3"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:background="@drawable/speaker_white_background_circle"
+            android:onClick="playQuestion" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="کام لەمانە ٧ سێوە؟"
+            android:textAlignment="center"
+            android:textColor="#fea754"
+            android:background="@android:color/white"
+            android:textSize="50sp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/correct_answer_3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:onClick="playSound"
+                android:padding="15dp"
+                android:src="@drawable/seven_apple_nobackground" />
+
+            <ImageView
+                android:id="@+id/wrong_answer_3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:onClick="playSound"
+                android:padding="15dp"
+                android:src="@drawable/fourapp_no_background" />
+
+        </LinearLayout>
+        <View
+
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@drawable/separator"
+            />
+
+        <Button
+            android:layout_margin="30dp"
+            android:id="@+id/question4"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:background="@drawable/speaker_white_background_circle"
+            android:onClick="playQuestion" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="کام لەمانە ٩ سێوە؟"
+            android:textAlignment="center"
+            android:textColor="#fea754"
+            android:background="@android:color/white"
+            android:textSize="50sp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+
+            >
+
+            <ImageView
+                android:id="@+id/wrong_answer_4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:onClick="playSound"
+                android:padding="15dp"
+                android:src="@drawable/eight_apple_nobackground" />
+
+            <ImageView
+                android:id="@+id/correct_answer_4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:onClick="playSound"
+                android:padding="15dp"
+                android:src="@drawable/nine_apple_nobackground" />
+
+        </LinearLayout>
+        <Button
+            android:layout_marginTop="-40dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/home"
+
+            />
+    </LinearLayout>
+</ScrollView>
