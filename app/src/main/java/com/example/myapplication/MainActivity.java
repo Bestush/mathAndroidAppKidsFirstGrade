@@ -21,9 +21,14 @@ public class MainActivity extends AppCompatActivity {
         public void goToNumbers(View v){
         Intent goToNumber = new Intent(MainActivity.this, ChapterOverview.class);
         startActivity(goToNumber);
-    }
+            overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+
+        }
 //
     public void goToQuestions(View v){
         Intent goToChapter = new Intent(MainActivity.this, ChapterOverviewQuestions.class);
-        startActivity(goToChapter);}
+        startActivity(goToChapter);
+        overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+
+    }
 }

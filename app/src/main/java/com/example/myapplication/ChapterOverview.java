@@ -16,17 +16,29 @@ public class ChapterOverview extends AppCompatActivity {
     public void chapter1(View v){
         Intent goToChapter = new Intent(ChapterOverview.this, ChapterOneNumbers.class);
         startActivity(goToChapter);
+        overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+
     }
     public void chapter2(View v){
         Intent goToChapter = new Intent(ChapterOverview.this, ChapterTwoNumbers.class);
-        startActivity(goToChapter);}
+        startActivity(goToChapter);
+        overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+
+    }
     public void goHome(View v){
         Intent goToChapter = new Intent(ChapterOverview.this, MainActivity.class);
-        startActivity(goToChapter);}
+        startActivity(goToChapter);
+        finish();
+        overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+
+    }
 
     public void chapter3(View v){
         Intent goToChapter = new Intent(ChapterOverview.this, ChapterThreeNumbers.class);
-        startActivity(goToChapter);}
+        startActivity(goToChapter);
+        overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+
+    }
 }
 
 

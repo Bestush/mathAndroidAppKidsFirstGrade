@@ -140,7 +140,10 @@ public class ChapterThreeNumbers extends AppCompatActivity {
 
     }
     public  void goHome(View v){
+        Intent goHome = new Intent(ChapterThreeNumbers.this, MainActivity.class);
+        startActivity(goHome);
         finish();
+        overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
 
     }
 

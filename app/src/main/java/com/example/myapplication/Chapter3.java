@@ -38,10 +38,10 @@ public class Chapter3 extends AppCompatActivity {
         soundCorrect = sound.load(this, R.raw.sound_correct, 1);
         soundError = sound.load(this, R.raw.sound_error, 1);
 
-        soundQuestion1 = sound.load(this, R.raw.one_plus_zero_one, 1);
-        soundQuestion2 = sound.load(this, R.raw.one_plus_one_two, 1);
-        soundQuestion3 = sound.load(this, R.raw.one_plus_two_three, 1);
-        soundQuestion4 = sound.load(this, R.raw.two_plus_two_four, 1);
+        soundQuestion1 = sound.load(this, R.raw.one_plus_zero_q, 1);
+        soundQuestion2 = sound.load(this, R.raw.one_plus_one_q, 1);
+        soundQuestion3 = sound.load(this, R.raw.one_plus_two_q, 1);
+        soundQuestion4 = sound.load(this, R.raw.two_plus_two_q, 1);
 
 
 
@@ -98,8 +98,10 @@ public class Chapter3 extends AppCompatActivity {
     }
 
     public  void goHome(View v){
+        Intent goHome = new Intent(Chapter3.this, MainActivity.class);
+        startActivity(goHome);
         finish();
-
+        overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
     }
 
 }
